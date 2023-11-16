@@ -1,0 +1,48 @@
+#countdown {
+    margin-left: 8px;
+}
+
+#countdown #tiles {
+    position: relative;
+}
+
+#countdown #tiles>span {
+    display: inline-block;
+    width: 36px;
+    max-width: 36px;
+    font: bold 18px "Noto Sans", sans-serif;
+    text-align: center;
+    color: #111;
+    background-color: #E8E2E2;
+    border-top: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    margin: 3px 7px;
+    padding: 4px 0;
+    position: relative;
+}
+
+#countdown #tiles>span::before {
+    content: "";
+    width: 100%;
+    height: 13px;
+    /* background: #111; */
+    display: block;
+    padding: 0 3px;
+    position: absolute;
+    top: 41%;
+    left: -3px;
+    z-index: -1;
+}
+
+#countdown #tiles>span::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    /* background: #eee;
+    border-top: 1px solid #333; */
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 0;
+}
